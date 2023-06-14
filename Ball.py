@@ -1,15 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jun 13 17:21:57 2023
+Created on Tue Jun 13 17:34:48 2023
 
 @author: lechon
 """
 
-# Program for computing the height of a ball in vertical motion (found in book) calculated in ft
+def height(v0, t):
+    # Constants
+    g = 32.8  # Acceleration due to gravity (ft/s^2)
 
-v0 = 5      # Initial velocity
-g = 32.8    # Acceleration of gravity in ft/sec/sec
-t = 0.6     # Time
+    # Calculate height
+    y = (v0 * t) - (0.5 * g * t ** 2)
 
-y = v0*t - 0.5*g*t**2 # Vertical position
-print(y,'ft')
+    return y
+t=1
+while t > 0:
+    v0 = input('input velocity, ft: ')
+    v0 = float(v0)
+    t = input('input time, sec: ')
+    t = float(t)
+    y = height(v0, t)
+
+    print(f'after {t} seconds height = {y} ft')    
