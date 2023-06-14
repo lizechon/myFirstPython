@@ -22,3 +22,7 @@ while t > 0:
     y = height(v0, t)
 
     print(f'after {t} seconds height = {y} ft')    
+    
+"""
+At time 1.6 ball got to its max height which was about 38 feet. Assuming we throw it vertically at initial velocity of 50 ft.
+"""
