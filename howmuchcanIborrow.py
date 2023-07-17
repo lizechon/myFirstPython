@@ -32,9 +32,3 @@ affordable_loan_amount = compute_affordable_loan_amount(Pmt, r, n)
 
 # Display the result
 print("Affordable Loan Amount:", "{:.2f}".format(affordable_loan_amount))
-
-# Call the function to compute the monthly repayment amount
-monthly_repayment = compute_monthly_repayment(affordable_loan_amount, r, n)
-
-# Display the result
-print("Monthly Repayment Amount:", "{:.2f}".format(monthly_repayment))
